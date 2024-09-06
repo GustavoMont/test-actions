@@ -12,9 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: |
-            dev/staging
-            dev/features
+          fetch-depth: 0
 
       - run: |
           git config --global user.name "GitHub Actions"
