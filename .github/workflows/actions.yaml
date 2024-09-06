@@ -20,5 +20,5 @@ jobs:
 
       - run: |
           git checkout dev/features
-          git merge dev
-          git push origin features
+          git merge dev/staging
+          git push origin dev/features
