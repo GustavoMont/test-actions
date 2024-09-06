@@ -4,6 +4,9 @@ on:
   push:
     branches: [dev/staging]
 
+permissions:
+  contents: write
+
 jobs:
   merge:
     name: Sync dev/features branch
